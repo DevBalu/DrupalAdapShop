@@ -1,0 +1,29 @@
+name = Love Game
+description = Love Game main frontend theme
+core = 7.x
+
+;Regions
+
+regions[navigation]     = 'Navigation'
+regions[header]         = 'Top Bar'
+regions[highlighted]    = 'Highlighted'
+regions[help]           = 'Help'
+regions[content]        = 'Content'
+regions[sidebar_first]  = 'Primary'
+regions[sidebar_second] = 'Secondary'
+regions[footer]         = 'Footer'
+regions[page_top]       = 'Page top'
+regions[page_bottom]    = 'Page bottom'
+
+stylesheets[screen][] = css/materialize.min.css
+stylesheets[screen][] = libs/flickity/flickity.min.css
+stylesheets[screen][] = css/comun.css
+
+scripts[] = js/materialize.min.js
+scripts[] = libs/flickity/flickityJS/flickity.min.js
+scripts[] = js/common.js
+scripts[] = js/love_game.js
+
+; Information added by Drupal.org packaging script on 2016-08-03
+version = "7.x-1.0"
+core = "7.x"
