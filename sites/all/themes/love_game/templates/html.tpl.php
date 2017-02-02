@@ -43,12 +43,6 @@
  * @ingroup themeable
  */
 ?>
-<?php
-$menu = menu_navigation_links('main-menu');
-//print theme('links__system_main_menu', array('links' => $menu));
-?>
-
-
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language; ?>" version="XHTML+RDFa 1.0" dir="<?php print $language->dir; ?>"<?php print $rdf_namespaces; ?>>
   <head>
@@ -60,7 +54,7 @@ $menu = menu_navigation_links('main-menu');
     <?php print $styles; ?>
     <?php print $scripts; ?>
   </head>
-  <body>
+  <body class="adminimal-menu">
     <?php print $page_top; ?>
     <?php print $page; ?>
     <?php print $page_bottom; ?>
