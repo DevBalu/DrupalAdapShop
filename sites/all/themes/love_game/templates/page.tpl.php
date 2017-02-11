@@ -73,37 +73,48 @@
  */
 ?>
 
-  <div id="page-wrapper"><div id="page">
+<?php print $messages; ?>
 
-    <?php print $messages; ?>
-
-    <div id="main-wrapper"><div id="main" class="clearfix">
-
-      <div id="content" class="column"><div class="section">
-        <?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?></h1>
-        <?php endif; ?>
-        <?php print render($page['help']); ?>
-        <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
-        <?php print render($page['content']); ?>
-        <?php print $feed_icons; ?>
-      </div></div> <!-- /.section, /#content -->
-
-      <?php if ($page['sidebar_first']): ?>
-        <div id="sidebar-first" class="column sidebar"><div class="section">
-          <?php print render($page['sidebar_first']); ?>
-        </div></div> <!-- /.section, /#sidebar-first -->
-      <?php endif; ?>
-
-      <?php if ($page['sidebar_second']): ?>
-        <div id="sidebar-second" class="column sidebar"><div class="section">
-          <?php print render($page['sidebar_second']); ?>
-        </div></div> <!-- /.section, /#sidebar-second -->
-      <?php endif; ?>
-
-    </div></div> <!-- /#main, /#main-wrapper -->
-
-    <div id="footer"><div class="section">
-      <?php print render($page['footer']); ?>
-    </div></div> <!-- /.section, /#footer -->
-
-  </div></div> <!-- /#page, /#page-wrapper -->
+<div class="itemSec">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m12 l12 ">
+        <div class="card horizontal row">
+          <div class="card-image col s12 m6"><img src="img/fbpage.jpg" class="materialboxed"></div>
+          <div class="card-stacked col s12">
+            <div class="card-content">
+              <h4><?php print $title; ?></h4>
+              <p>Description Lorem ipsum dolor sit amet, consectetur adipisicing.Description Lorem ipsum dolor sit amet, consectetur adipisicing.Description Lorem ipsum dolor sit amet, consectetur adipisicing.Description Lorem ipsum dolor sit amet, consectetur adipisicing.Description Lorem ipsum dolor sit amet, consectetur adipisicing.Description Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+              <h5>Price: 1000 €</h5><i class="material-icons small">star</i><i class="material-icons small">star</i><i class="material-icons small">star</i><i class="material-icons small">star</i>
+            </div>
+            <div class="card-action right"><a href="#">ADD TO CART</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--END item section-->
+<!--itemParametres-->
+<div class="itemSpecifics">
+  <div class="container">
+    <h4 class="center">ITEM SPECIFICATION</h4>
+    <div class="row specContent">
+      <div class="col s12 m6 l6">
+        <p>Condition: </p>
+        <p>Clarity: Clean </p>
+        <p>Cut: Clean </p>
+        <p>Gem type: Clean </p>
+        <p>Color: Red </p>
+      </div>
+      <div class="col s12 m6 l6">
+        <p>Brand: Gem Strone King </p>
+        <p>Metal: Sterling Silver </p>
+        <p>Style: Pendant </p>
+        <p>Matal Purity: 924, Sterling</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--END itemParametres-->
+<?php print render($page['content']); ?>
