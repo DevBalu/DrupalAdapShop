@@ -10,6 +10,16 @@ function love_game_js_alter(&$js) {
 	}
 }
 
+function love_game_preprocess_node(&$vars) {
+  if ($vars['type'] == 'product') {
+    $vars['product_description'] = $vars['body'][0]['value'];
+    print '<pre>';
+    // print_r($vars);
+    print_r(array_keys($vars));
+    print '</pre>';die;
+  }
+}
+
 function love_game_preprocess_html(&$vars) {
   // draw main menu.
   $menu_array = menu_navigation_links('main-menu');
@@ -32,13 +42,13 @@ function love_game_preprocess_html(&$vars) {
   ));
 	
   if (module_exists('path')) {
-    	$alias = drupal_get_path_alias(str_replace('/edit', '', $_GET['q']));
-    	if ($alias != $_GET['q']) {
-      		$template_filename = 'html';
-      		foreach (explode('/', $alias) as $path_part) {
-        		$template_filename = $template_filename . '__' . $path_part;
-        		$vars['theme_hook_suggestions'][] = $template_filename;
-      		}
-	    }
+  	$alias = drupal_get_path_alias(str_replace('/edit', '', $_GET['q']));
+  	if ($alias != $_GET['q']) {
+  		$template_filename = 'html';
+  		foreach (explode('/', $alias) as $path_part) {
+    		$template_filename = $template_filename . '__' . $path_part;
+    		$vars['theme_hook_suggestions'][] = $template_filename;
+  		}
+    }
   }
 }
