@@ -68,11 +68,11 @@
                   <li><a href="#" class="dropdown-button dropactive"> <i class="material-icons">reorder</i></a></li>
                 </ul>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                  <li><a href="catalog.html">CATALOG</a></li>
+                  <li><a href="/catalog">CATALOG</a></li>
                   <li><a href="index.html#threeSection">POPULAR</a></li>
                   <li><a href="info.html">INFORMATION</a></li>
                   <ul class="dropdown-content drop">
-                    <li><a href="catalog.html">CATALOG</a></li>
+                    <li><a href="/catalog">CATALOG</a></li>
                     <li><a href="index.html#threeSection">POPULAR</a></li>
                     <li><a href="info.html">INFORMATION</a></li>
                   </ul>

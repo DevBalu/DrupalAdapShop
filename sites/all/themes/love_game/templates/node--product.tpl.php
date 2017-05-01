@@ -85,14 +85,15 @@
     <div class="row">
       <div class="col s12 m12 l12 ">
         <div class="card horizontal row">
-          <div class="card-image col s12 m6"><img src="img/fbpage.jpg" class="materialboxed"></div>
+          <div class="card-image col s12 m6"><img src="<?php print $product_image; ?>" class="materialboxed"></div>
           <div class="card-stacked col s12">
             <div class="card-content">
               <h4><?php print $title; ?></h4>
               <?php print $product_description; ?>
-              <h5>Price: 1000 €</h5><i class="material-icons small">star</i><i class="material-icons small">star</i><i class="material-icons small">star</i><i class="material-icons small">star</i>
+              <h5><?php print t('Price'); ?>: <?php print $product_price; ?></h5>
+              <?php print render($product_rating); ?>
             </div>
-            <div class="card-action right"><a href="#">ADD TO CART</a></div>
+            <div class="card-action right"><?php print $product_add_to_cart; ?></div>
           </div>
         </div>
       </div>
@@ -105,19 +106,16 @@
   <div class="container">
     <h4 class="center">ITEM SPECIFICATION</h4>
     <div class="row specContent">
-      <div class="col s12 m6 l6">
-        <p>Condition: </p>
-        <p>Clarity: Clean </p>
-        <p>Cut: Clean </p>
-        <p>Gem type: Clean </p>
-        <p>Color: Red </p>
-      </div>
-      <div class="col s12 m6 l6">
-        <p>Brand: Gem Strone King </p>
-        <p>Metal: Sterling Silver </p>
-        <p>Style: Pendant </p>
-        <p>Matal Purity: 924, Sterling</p>
-      </div>
+      <?php if ($product_specifications): ?>
+        <?php foreach ($product_specifications as $specification): ?>
+          
+          <div class="col s12 m6 l6">
+            <p><?php print $specification['name']; ?>: <?php print $specification['details']; ?></p>
+          </div>
+        
+        <?php endforeach; ?>
+      <?php endif; ?>
+
     </div>
   </div>
 </div>

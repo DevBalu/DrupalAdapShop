@@ -91,11 +91,11 @@
                   <li><a href="#" class="dropdown-button dropactive"> <i class="material-icons">reorder</i></a></li>
                 </ul>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                  <li><a href="catalog.html">CATALOG</a></li>
+                  <li><a href="/catalog">CATALOG</a></li>
                   <li><a href="index.html#threeSection">POPULAR</a></li>
                   <li><a href="info.html">INFORMATION</a></li>
                   <ul class="dropdown-content drop">
-                    <li><a href="catalog.html">CATALOG</a></li>
+                    <li><a href="/catalog">CATALOG</a></li>
                     <li><a href="index.html#threeSection">POPULAR</a></li>
                     <li><a href="info.html">INFORMATION</a></li>
                   </ul>
@@ -117,9 +117,9 @@
                         <P class="center">MEN</P>
                       </div><img src="img/sort/minCat1.jpg">
                     </div>
-                    <div class="collapsible-body"><a href="catalog.html">
-                        <p> Topco Lonely </p></a><a href="catalog.html">
-                        <p>CyberSkin  </p></a><a href="catalog.html">
+                    <div class="collapsible-body"><a href="/catalog">
+                        <p> Topco Lonely </p></a><a href="/catalog">
+                        <p>CyberSkin  </p></a><a href="/catalog">
                         <p>American Beauty</p></a></div>
                   </li>
                 </ul>
@@ -130,9 +130,9 @@
                         <p class="center">WOMEN</p>
                       </div><img src="img/sort/minCat2.jpg">
                     </div>
-                    <div class="collapsible-body"><a href="catalog.html">
-                        <p> Topco Lonely </p></a><a href="catalog.html">
-                        <p>CyberSkin  </p></a><a href="catalog.html">
+                    <div class="collapsible-body"><a href="/catalog">
+                        <p> Topco Lonely </p></a><a href="/catalog">
+                        <p>CyberSkin  </p></a><a href="/catalog">
                         <p>American Beauty</p></a></div>
                   </li>
                 </ul>
@@ -143,9 +143,9 @@
                         <p class="center">COUPLES</p>
                       </div><img src="img/sort/minCat3.jpg">
                     </div>
-                    <div class="collapsible-body"><a href="catalog.html">
-                        <p> Topco Lonely </p></a><a href="catalog.html">
-                        <p>CyberSkin  </p></a><a href="catalog.html">
+                    <div class="collapsible-body"><a href="/catalog">
+                        <p> Topco Lonely </p></a><a href="/catalog">
+                        <p>CyberSkin  </p></a><a href="/catalog">
                         <p>American Beauty</p></a></div>
                   </li>
                 </ul>
@@ -156,9 +156,9 @@
                         <p class="center">DILDE</p>
                       </div><img src="img/sort/minCat4.jpg">
                     </div>
-                    <div class="collapsible-body"><a href="catalog.html">
-                        <p> Topco Lonely </p></a><a href="catalog.html">
-                        <p>CyberSkin  </p></a><a href="catalog.html">
+                    <div class="collapsible-body"><a href="/catalog">
+                        <p> Topco Lonely </p></a><a href="/catalog">
+                        <p>CyberSkin  </p></a><a href="/catalog">
                         <p>American Beauty</p></a></div>
                   </li>
                 </ul>
@@ -171,9 +171,9 @@
                         <p class="center">BANDAGE</p>
                       </div><img src="img/sort/minCat5.jpg">
                     </div>
-                    <div class="collapsible-body"><a href="catalog.html">
-                        <p> Topco Lonely </p></a><a href="catalog.html">
-                        <p>CyberSkin  </p></a><a href="catalog.html">
+                    <div class="collapsible-body"><a href="/catalog">
+                        <p> Topco Lonely </p></a><a href="/catalog">
+                        <p>CyberSkin  </p></a><a href="/catalog">
                         <p>American Beauty</p></a></div>
                   </li>
                 </ul>
@@ -184,9 +184,9 @@
                         <p class="center">LINGERIE</p>
                       </div><img src="img/sort/afda.png">
                     </div>
-                    <div class="collapsible-body"><a href="catalog.html">
-                        <p> Topco Lonely </p></a><a href="catalog.html">
-                        <p>CyberSkin  </p></a><a href="catalog.html">
+                    <div class="collapsible-body"><a href="/catalog">
+                        <p> Topco Lonely </p></a><a href="/catalog">
+                        <p>CyberSkin  </p></a><a href="/catalog">
                         <p>American Beauty</p></a></div>
                   </li>
                 </ul>
@@ -197,9 +197,9 @@
                         <p class="center">CHRISTMAS</p>
                       </div><img src="img/sort/minCat16.jpg">
                     </div>
-                    <div class="collapsible-body"><a href="catalog.html">
-                        <p> Topco Lonely </p></a><a href="catalog.html">
-                        <p>CyberSkin  </p></a><a href="catalog.html">
+                    <div class="collapsible-body"><a href="/catalog">
+                        <p> Topco Lonely </p></a><a href="/catalog">
+                        <p>CyberSkin  </p></a><a href="/catalog">
                         <p>American Beauty</p></a></div>
                   </li>
                 </ul>
@@ -210,9 +210,9 @@
                         <p class="center">SEXY PANTIES</p>
                       </div><img src="img/sort/minCat7.jpg">
                     </div>
-                    <div class="collapsible-body"><a href="catalog.html">
-                        <p> Topco Lonely </p></a><a href="catalog.html">
-                        <p>CyberSkin  </p></a><a href="catalog.html">
+                    <div class="collapsible-body"><a href="/catalog">
+                        <p> Topco Lonely </p></a><a href="/catalog">
+                        <p>CyberSkin  </p></a><a href="/catalog">
                         <p>American Beauty</p></a></div>
                   </li>
                 </ul>
@@ -225,9 +225,9 @@
                         <p class="center">FETISH WEAR</p>
                       </div><img src="img/sort/minCat8.jpg">
                     </div>
-                    <div class="collapsible-body"><a href="catalog.html">
-                        <p> Topco Lonely </p></a><a href="catalog.html">
-                        <p>CyberSkin  </p></a><a href="catalog.html">
+                    <div class="collapsible-body"><a href="/catalog">
+                        <p> Topco Lonely </p></a><a href="/catalog">
+                        <p>CyberSkin  </p></a><a href="/catalog">
                         <p>American Beauty</p></a></div>
                   </li>
                 </ul>
@@ -238,9 +238,9 @@
                         <p class="center">BUT PLUGS</p>
                       </div><img src="img/sort/minCat9.jpg">
                     </div>
-                    <div class="collapsible-body"><a href="catalog.html">
-                        <p> Topco Lonely </p></a><a href="catalog.html">
-                        <p>CyberSkin  </p></a><a href="catalog.html">
+                    <div class="collapsible-body"><a href="/catalog">
+                        <p> Topco Lonely </p></a><a href="/catalog">
+                        <p>CyberSkin  </p></a><a href="/catalog">
                         <p>American Beauty</p></a></div>
                   </li>
                 </ul>
@@ -251,9 +251,9 @@
                         <p class="center">ELECTRO</p>
                       </div><img src="img/sort/minCat10.jpg">
                     </div>
-                    <div class="collapsible-body"><a href="catalog.html">
-                        <p> Topco Lonely </p></a><a href="catalog.html">
-                        <p>CyberSkin  </p></a><a href="catalog.html">
+                    <div class="collapsible-body"><a href="/catalog">
+                        <p> Topco Lonely </p></a><a href="/catalog">
+                        <p>CyberSkin  </p></a><a href="/catalog">
                         <p>American Beauty</p></a></div>
                   </li>
                 </ul>
@@ -264,9 +264,9 @@
                         <p class="center">MEDICAL</p>
                       </div><img src="img/sort/minCat11.jpg">
                     </div>
-                    <div class="collapsible-body"><a href="catalog.html">
-                        <p> Topco Lonely </p></a><a href="catalog.html">
-                        <p>CyberSkin  </p></a><a href="catalog.html">
+                    <div class="collapsible-body"><a href="/catalog">
+                        <p> Topco Lonely </p></a><a href="/catalog">
+                        <p>CyberSkin  </p></a><a href="/catalog">
                         <p>American Beauty</p></a></div>
                   </li>
                 </ul>
@@ -279,9 +279,9 @@
                         <p class="center">FETISH</p>
                       </div><img src="img/sort/minCat12.jpg">
                     </div>
-                    <div class="collapsible-body"><a href="catalog.html">
-                        <p> Topco Lonely </p></a><a href="catalog.html">
-                        <p>CyberSkin  </p></a><a href="catalog.html">
+                    <div class="collapsible-body"><a href="/catalog">
+                        <p> Topco Lonely </p></a><a href="/catalog">
+                        <p>CyberSkin  </p></a><a href="/catalog">
                         <p>American Beauty</p></a></div>
                   </li>
                 </ul>
@@ -292,9 +292,9 @@
                         <p class="center">CLOTHING</p>
                       </div><img src="img/sort/minCat13.jpg">
                     </div>
-                    <div class="collapsible-body"><a href="catalog.html">
-                        <p> Topco Lonely </p></a><a href="catalog.html">
-                        <p>CyberSkin  </p></a><a href="catalog.html">
+                    <div class="collapsible-body"><a href="/catalog">
+                        <p> Topco Lonely </p></a><a href="/catalog">
+                        <p>CyberSkin  </p></a><a href="/catalog">
                         <p>American Beauty</p></a></div>
                   </li>
                 </ul>
@@ -305,9 +305,9 @@
                         <p class="center">DEVICES</p>
                       </div><img src="img/sort/minCat14.jpg">
                     </div>
-                    <div class="collapsible-body"><a href="catalog.html">
-                        <p> Topco Lonely </p></a><a href="catalog.html">
-                        <p>CyberSkin  </p></a><a href="catalog.html">
+                    <div class="collapsible-body"><a href="/catalog">
+                        <p> Topco Lonely </p></a><a href="/catalog">
+                        <p>CyberSkin  </p></a><a href="/catalog">
                         <p>American Beauty</p></a></div>
                   </li>
                 </ul>
@@ -318,9 +318,9 @@
                         <p class="center">SEXY COSTUMES</p>
                       </div><img src="img/sort/minCat15.jpg">
                     </div>
-                    <div class="collapsible-body"><a href="catalog.html">
-                        <p> Topco Lonely </p></a><a href="catalog.html">
-                        <p>CyberSkin  </p></a><a href="catalog.html">
+                    <div class="collapsible-body"><a href="/catalog">
+                        <p> Topco Lonely </p></a><a href="/catalog">
+                        <p>CyberSkin  </p></a><a href="/catalog">
                         <p>American Beauty</p></a></div>
                   </li>
                 </ul>
@@ -340,11 +340,11 @@
                   <li><a href="#" class="dropdown-button dropactive"> <i class="material-icons">reorder</i></a></li>
                 </ul>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                  <li><a href="catalog.html">CATALOG</a></li>
+                  <li><a href="/catalog">CATALOG</a></li>
                   <li><a href="index.html#threeSection">POPULAR</a></li>
                   <li><a href="info.html">INFORMATION</a></li>
                   <ul class="dropdown-content drop">
-                    <li><a href="catalog.html">CATALOG</a></li>
+                    <li><a href="/catalog">CATALOG</a></li>
                     <li><a href="index.html#threeSection">POPULAR</a></li>
                     <li><a href="info.html">INFORMATION</a></li>
                   </ul>
