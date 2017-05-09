@@ -72,7 +72,7 @@
  * @ingroup themeable
  */
 ?>
-Catalog page.
+Catalo
 <?php print $messages; ?>
 <!--END itemParametres-->
 <?php print render($page['content']); ?>

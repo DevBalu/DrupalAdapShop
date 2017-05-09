@@ -52,10 +52,6 @@ function love_game_preprocess_node(&$vars) {
     $vars['product_specifications'] = $specifications;
     $rating = field_view_field('commerce_product', $product, 'field_rating', 'oxygen');
     $vars['product_rating'] = $rating;
-    // print '<pre>';
-    // print_r($fivestar);
-    // print_r($product);
-    // print '</pre>';die;
   }
 }
 
