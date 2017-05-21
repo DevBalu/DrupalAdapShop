@@ -104,7 +104,7 @@
 <!--itemParametres-->
 <div class="itemSpecifics">
   <div class="container">
-    <h4 class="center">ITEM SPECIFICATION</h4>
+    <h4 class="center"><?php print t('Item specification'); ?></h4>
     <div class="row specContent">
       <?php if ($product_specifications): ?>
         <?php foreach ($product_specifications as $specification): ?>

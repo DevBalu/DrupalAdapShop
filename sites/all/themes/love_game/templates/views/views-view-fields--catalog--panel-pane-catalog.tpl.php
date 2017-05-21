@@ -36,6 +36,6 @@
     </span>
     <span class="price col s6">
       <span><?php print $fields['commerce_price']->content; ?></span>
-3    </span>
+    </span>
   </div>
 </div>

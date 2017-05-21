@@ -1,0 +1,8 @@
+name = Love Game
+description = Module which has main logic for site.
+core = 7.x
+
+version = "7.x-1.0"
+core = "7.x"
+project = "love_game"
+datestamp = "1494440973"

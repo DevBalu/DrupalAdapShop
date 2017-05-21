@@ -1,0 +1,15 @@
+<?php
+/**
+ * @file
+ * Main module file for Love Game module.
+ */
+
+function love_game_form_alter(&$form, $form_state, $form_id) {
+  $id = 'views-exposed-form-catalog-panel-pane-catalog';
+  if ($form_id == 'views_exposed_form' && $form['#id'] == $id) {
+    $form['commerce_price_amount']['#prefix'] = '
+    <p class="range-field">
+      <input type="range" id="price" min="0" max="9999">
+    </p>';
+  }
+}

@@ -53,6 +53,9 @@
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <?php print $styles; ?>
     <?php print $scripts; ?>
+    <script type='text/javascript'> 
+     jQuery.noConflict();
+    </script>
   </head>
   <body class="adminimal-menu">
     <!--main container-->
@@ -63,20 +66,10 @@
         <div class="menuCatalog">
           <div class="container">
             <nav>
-              <div class="nav-wrapper"><a href="../index.html" class="brand-logo left">LOVE GAME</a>
-                <ul class="right">
-                  <li><a href="#" class="dropdown-button dropactive"> <i class="material-icons">reorder</i></a></li>
-                </ul>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                  <li><a href="catalog.html">CATALOG</a></li>
-                  <li><a href="index.html#threeSection">POPULAR</a></li>
-                  <li><a href="info.html">INFORMATION</a></li>
-                  <ul class="dropdown-content drop">
-                    <li><a href="catalog.html">CATALOG</a></li>
-                    <li><a href="index.html#threeSection">POPULAR</a></li>
-                    <li><a href="info.html">INFORMATION</a></li>
-                  </ul>
-                </ul>
+              <div class="nav-wrapper">
+                <a href="/" class="brand-logo left">LOVE GAME</a>
+                <?php print $love_game_menu_desktop; ?>
+                <?php print $love_game_menu_mobile; ?>
               </div>
             </nav>
           </div>
@@ -85,157 +78,6 @@
         <!--filter-->
         <div class="container">
           <div class="row">
-            <div class="filter col l3 m4 s12">
-              <div class="nav-wrapper">
-                <form>
-                  <div class="input-field">
-                    <lable for="search" class="is"><i class="small material-icons">search</i></lable>
-                    <input id="search" type="search" required><i class="material-icons">close</i>
-                  </div>
-                </form>
-              </div>
-              <ul data-collapsible="expandable" class="collapsible ">
-                <li>
-                  <div class="collapsible-header active"><i class="material-icons">mode_edit</i>
-                    <p>PRICE</p>
-                  </div>
-                  <div class="collapsible-body">
-                    <div class="col l9 m7 s12">
-                      <form action="#">
-                        <p class="range-field">
-                          <input type="range" id="price" min="0" max="1000">
-                        </p>
-                      </form>
-                    </div>
-                    <div class="col l3 m5 s12"><a class="waves-effect waves-light btn"><i class="material-icons">€</i></a></div>
-                  </div>
-                </li>
-                <li>
-                  <div class="collapsible-header active"><i class="material-icons">polymer</i>
-                    <p>FOR MEN</p>
-                  </div>
-                  <div class="collapsible-body">
-                    <div class="col l10 m10 s9 offset-l1">
-                      <input type="checkbox" class="field-filter">
-                      <label class="lable-field-filter">Masturbators for men</label>
-                      <input type="checkbox" class="field-filter">
-                      <label class="lable-field-filter">Fleshlight Masturbators</label>
-                      <input type="checkbox" class="field-filter">
-                      <label class="lable-field-filter">Sex Doll</label>
-                      <input type="checkbox" class="field-filter">
-                      <label class="lable-field-filter">Cock Cages / Penis</label>
-                      <input type="checkbox" class="field-filter">
-                      <label class="lable-field-filter">FPenis Enlargement</label>
-                      <input type="checkbox" class="field-filter">
-                      <label class="lable-field-filter">Erotic accessories</label>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="collapsible-header active"><i class="material-icons">done</i>
-                    <p>FOR WOMEN</p>
-                  </div>
-                  <div class="collapsible-body">
-                    <div class="col l10 m10 s9 offset-l1 offset-m1 offset-s1">
-                      <input type="checkbox" class="field-filter">
-                      <label class="lable-field-filter">Masturbators for men</label>
-                      <input type="checkbox" class="field-filter">
-                      <label class="lable-field-filter">Fleshlight Masturbators</label>
-                      <input type="checkbox" class="field-filter">
-                      <label class="lable-field-filter">Tenga Masturbators</label>
-                      <input type="checkbox" class="field-filter">
-                      <label class="lable-field-filter">Meiki Masturbators</label>
-                      <input type="checkbox" class="field-filter">
-                      <label class="lable-field-filter">Sex Doll</label>
-                      <input type="checkbox" class="field-filter">
-                      <label class="lable-field-filter">Cock Cages / Penis</label>
-                      <input type="checkbox" class="field-filter">
-                      <label class="lable-field-filter">FPenis Enlargement</label>
-                      <input type="checkbox" class="field-filter">
-                      <label class="lable-field-filter">Erotic accessories</label>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="collapsible-header active"><i class="material-icons">label_outline</i>
-                    <p>SPECIALS</p>
-                  </div>
-                  <div class="collapsible-body">
-                    <div class="col l10 m10 s9 offset-l1 offset-m1 offset-s1">
-                      <input type="checkbox" class="field-filter">
-                      <label class="lable-field-filter">Masturbators for men</label>
-                      <input type="checkbox" class="field-filter">
-                      <label class="lable-field-filter">Fleshlight Masturbators</label>
-                      <input type="checkbox" class="field-filter">
-                      <label class="lable-field-filter">FPenis Enlargement</label>
-                      <input type="checkbox" class="field-filter">
-                      <label class="lable-field-filter">Erotic accessories</label>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="collapsible-header active"><i class="material-icons">invert_colors</i>
-                    <p>FEUTERED</p>
-                  </div>
-                  <div class="collapsible-body">
-                    <div class="col l10 m10 s9 offset-l1 offset-m1 offset-s1">
-                      <input type="checkbox" class="field-filter">
-                      <label class="lable-field-filter">Tenga Masturbators</label>
-                      <input type="checkbox" class="field-filter">
-                      <label class="lable-field-filter">Meiki Masturbators</label>
-                      <input type="checkbox" class="field-filter">
-                      <label class="lable-field-filter">Sex Doll</label>
-                      <input type="checkbox" class="field-filter">
-                      <label class="lable-field-filter">Cock Cages / Penis</label>
-                      <input type="checkbox" class="field-filter">
-                      <label class="lable-field-filter">FPenis Enlargement</label>
-                      <input type="checkbox" class="field-filter">
-                      <label class="lable-field-filter">Erotic accessories</label>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="collapsible-header active"><i class="material-icons">play_for_work</i>
-                    <p>SEX TOYS FOR COUPLES</p>
-                  </div>
-                  <div class="collapsible-body">
-                    <div class="col l10 m10 s9 offset-l1 offset-m1 offset-s1">
-                      <input type="checkbox" class="field-filter">
-                      <label class="lable-field-filter">Tenga Masturbators</label>
-                      <input type="checkbox" class="field-filter">
-                      <label class="lable-field-filter">Meiki Masturbators</label>
-                      <input type="checkbox" class="field-filter">
-                      <label class="lable-field-filter">Sex Doll</label>
-                      <input type="checkbox" class="field-filter">
-                      <label class="lable-field-filter">Cock Cages / Penis</label>
-                      <input type="checkbox" class="field-filter">
-                      <label class="lable-field-filter">FPenis Enlargement</label>
-                      <input type="checkbox" class="field-filter">
-                      <label class="lable-field-filter">Erotic accessories</label>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="collapsible-header active"><i class="material-icons">skip_next</i>
-                    <p>BRANDS</p>
-                  </div>
-                  <div class="collapsible-body">
-                    <div class="col l10 m10 s9 offset-l1 offset-m1 offset-s1">
-                      <input type="checkbox" class="field-filter">
-                      <label class="lable-field-filter">Masturbators for men</label>
-                      <input type="checkbox" class="field-filter">
-                      <label class="lable-field-filter">Fleshlight Masturbators</label>
-                      <input type="checkbox" class="field-filter">
-                      <label class="lable-field-filter">Tenga Masturbators</label>
-                      <input type="checkbox" class="field-filter">
-                      <label class="lable-field-filter">Meiki Masturbators</label>
-                      <input type="checkbox" class="field-filter">
-                      <label class="lable-field-filter">Sex Doll</label>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
             <?php print $page; ?>
           </div>
         </div>

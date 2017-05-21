@@ -87,3 +87,24 @@ function love_game_preprocess_html(&$vars) {
     }
   }
 }
+
+function love_game_preprocess_views_exposed_form(&$vars) {
+  if ($vars['form']['#id'] == 'views-exposed-form-catalog-panel-pane-catalog') {
+    foreach ($vars['widgets'] as $id => &$widget) {
+      switch ($id) {
+        case 'filter-commerce_price_amount':
+          // print '<pre>';
+          // print_r($widget);
+          // print '</pre>';die;
+          // $widget->widget = '<div class="filter col l3 m4 s12">' . $widget->widget;
+          break;
+        case 'filter-field_category_tid':
+          // $widget->widget .= '</div>';
+          break;
+      }
+    }
+    // print '<pre>';
+    // print_r($vars['widgets']);
+    // print '</pre>';die;
+  }
+}

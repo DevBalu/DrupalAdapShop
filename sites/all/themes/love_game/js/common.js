@@ -1,6 +1,13 @@
 (function ($) {
     Drupal.behaviors.love_game = {
         attach: function(context) {
+            $('input[type="range"]', context).change(function(e) {
+                e.preventDetfault();
+                var $price = $(this, context).next().find('.value').text();
+                $('input[name="commerce_price_amount]').attr('value', $price); 
+                console.log($('input[name="commerce_price_amount"]'));
+                console.log($price);
+            });
 
             /*Set attribute dropdown*/
             var drop = $(".drop");
