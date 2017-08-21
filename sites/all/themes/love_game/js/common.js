@@ -47,13 +47,17 @@
 
       /*--------------------------------*/
       $('.parallax').parallax();
-      /**/
+      
       /*-----------------Information set---------------*/
-      $('.carousel').carousel();
-      /**/
+      if (window.location.pathname == '/information') {
+        $('.carousel').carousel();
+      }
+
+      // Initialize fancy select.
+      $('select').material_select();
+      
       /*--------------------------------*/
       $('.materialboxed').materialbox();
-      /**/
     }
   }
 }(jQuery));

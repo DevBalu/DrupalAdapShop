@@ -63,20 +63,10 @@
         <div class="menuItem">
           <div class="container">
             <nav>
-              <div class="nav-wrapper"><a href="../index.html" class="brand-logo left">LOVE GAME</a>
-                <ul class="right">
-                  <li><a href="#" class="dropdown-button dropactive"> <i class="material-icons">reorder</i></a></li>
-                </ul>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                  <li><a href="/catalog">CATALOG</a></li>
-                  <li><a href="index.html#threeSection">POPULAR</a></li>
-                  <li><a href="info.html">INFORMATION</a></li>
-                  <ul class="dropdown-content drop">
-                    <li><a href="/catalog">CATALOG</a></li>
-                    <li><a href="index.html#threeSection">POPULAR</a></li>
-                    <li><a href="info.html">INFORMATION</a></li>
-                  </ul>
-                </ul>
+              <div class="nav-wrapper">
+                <a href="/" class="brand-logo left">LOVE GAME</a>
+                <?php print $love_game_menu_desktop; ?>
+                <?php print $love_game_menu_mobile; ?>
               </div>
             </nav>
           </div>
@@ -133,11 +123,5 @@
       </div>
       <!--END footer-->
     </main>
-    <!--library-->
-    <script src="libs/jquery/dist/jquery.min.js"></script>
-    <script src="js/materialize.min.js"></script>
-    <script src="libs/flickity/flickityJS/flickity.min.js"></script>
-    <script src="js/common.js"></script>
-    <!--END library-->
   </body>
 </html>
