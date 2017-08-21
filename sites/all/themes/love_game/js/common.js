@@ -53,8 +53,10 @@
         $('.carousel').carousel();
       }
 
-      // Initialize fancy select.
-      $('select').material_select();
+      if (window.location.pathname != '/') {
+        // Initialize fancy select.
+        $('select').material_select();
+      }
       
       /*--------------------------------*/
       $('.materialboxed').materialbox();
