@@ -53,37 +53,76 @@
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <?php print $styles; ?>
     <?php print $scripts; ?>
+    <script type='text/javascript'> 
+     jQuery.noConflict();
+    </script>
   </head>
   <body class="adminimal-menu">
     <!--main container-->
     <main>
-      <!--ONE SECTION-->
-      <div class="oneSection">
-        <!--menu one section-->
+      <!--INFORMATION SECTION-->
+      <div class="info">
+        <!--menu information section-->
         <div class="container">
           <!--menu-->
           <nav>
             <div class="nav-wrapper">
-            <a href="/" class="brand-logo left">LOVE GAME</a>
+            <a href="/" class="brand-logo left"><?php print t('love game'); ?></a>
               <?php print $love_game_menu_desktop; ?>
               <?php print $love_game_menu_mobile; ?>
             </div>
           </nav>
+          <!--END menu-->
         </div>
-        <?php 
-          // slideshow one section.
-          $view = views_get_view('frontpage_gallery');
-          print $view->render('block');
-
-          // brands slideshow one section.
-          $view = views_get_view('frontpage_brands');
-          print $view->render('block');
-        ?>
-      </div>
-        
         <?php print $page; ?>
         
       </div>
+      <!--footer-->
+      <div id="footer">
+        <div class="page-footer grey">
+          <div class="container">
+            <div class="row">
+              <div class="col l3 s12">
+                <ul>
+                  <h4 class="white-text">CUSTOMER SERVICE</h4>
+                  <li><a href="#!" class="grey-text text-lighten-3">CONTACT USE</a></li>
+                  <li><a href="#!" class="grey-text text-lighten-3">RETURNS</a></li>
+                  <li><a href="#!" class="grey-text text-lighten-3">SITE MAP</a></li>
+                </ul>
+              </div>
+              <div class="col l3 s12">
+                <ul>
+                  <h5 class="white-text">EXTRASS</h5>
+                  <li><a href="#!" class="grey-text text-lighten-3">BRANDS</a></li>
+                  <li><a href="#!" class="grey-text text-lighten-3">AFFILIATES</a></li>
+                  <li><a href="#!" class="grey-text text-lighten-3">SPECIALS</a></li>
+                </ul>
+              </div>
+              <div class="col l3 s12">
+                <ul style="margin:0;" class="left">
+                  <h5 class="white-text">SOCIALS</h5>
+                  <li><a href="#!" class="grey-text text-lighten-3">Facebook</a></li>
+                  <li><a href="#!" class="grey-text text-lighten-3">Twitter</a></li>
+                  <li><a href="#!" class="grey-text text-lighten-3">Instagramm </br></a></li>
+                  <li><a href="#!" class="grey-text text-lighten-4 right">More Links</a></li>
+                </ul>
+              </div>
+              <div class="col l3 s12">
+                <h5 class="white-text">CONTACT US</h5>
+                <p class="grey-text text-lighten-4">No 1104 Sky Tower, Newyork, USA</p>
+                <p class="grey-text text-lighten-4">Phone: +01 888 (000) 1234</p>
+                <p class="grey-text text-lighten-4">Email: suport@yahoo.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+              <p class="center">|© Powered by Andrei Ghenov (DevBalu)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--END footer-->
     </main>
   </body>
 </html>

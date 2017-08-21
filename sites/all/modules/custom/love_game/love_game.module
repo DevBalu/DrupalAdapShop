@@ -4,12 +4,45 @@
  * Main module file for Love Game module.
  */
 
+/**
+ * Implements hook_form_alter().
+ */
 function love_game_form_alter(&$form, $form_state, $form_id) {
   $id = 'views-exposed-form-catalog-panel-pane-catalog';
   if ($form_id == 'views_exposed_form' && $form['#id'] == $id) {
-    $form['commerce_price_amount']['#prefix'] = '
-    <p class="range-field">
-      <input type="range" id="price" min="0" max="9999">
-    </p>';
+    // @TODO : Add some custom logic.
   }
+}
+
+/**
+ * Implements hook_ctools_plugin_directory().
+ */
+function love_game_ctools_plugin_directory($owner, $plugin_type) {
+  if ($owner == 'ctools' && $plugin_type == 'content_types') {
+    return 'plugins/content_types';
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function love_game_theme($existing, $type, $theme, $path) {
+  $theme = array();
+  $theme['love_game_slideshow'] = array(
+    'variables' => array('images' => array()),
+    'template' => 'love-game-slideshow',
+    'path' => drupal_get_path('module', 'love_game') . '/templates',
+  );
+  $theme['love_game_categories'] = array(
+    'variables' => array('categories' => array()),
+    'template' => 'love-game-categories',
+    'path' => drupal_get_path('module', 'love_game') . '/templates',
+  );
+  $theme['love_game_most_popular'] = array(
+    'variables' => array('products' => array()),
+    'template' => 'love-game-most-popular',
+    'path' => drupal_get_path('module', 'love_game') . '/templates',
+  );
+
+  return $theme;
 }

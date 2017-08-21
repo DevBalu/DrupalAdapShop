@@ -92,19 +92,43 @@ function love_game_preprocess_views_exposed_form(&$vars) {
   if ($vars['form']['#id'] == 'views-exposed-form-catalog-panel-pane-catalog') {
     foreach ($vars['widgets'] as $id => &$widget) {
       switch ($id) {
-        case 'filter-commerce_price_amount':
-          // print '<pre>';
-          // print_r($widget);
-          // print '</pre>';die;
-          // $widget->widget = '<div class="filter col l3 m4 s12">' . $widget->widget;
-          break;
         case 'filter-field_category_tid':
-          // $widget->widget .= '</div>';
+          $vocabulary = taxonomy_vocabulary_machine_name_load('categories');
+          $terms = taxonomy_get_tree($vocabulary->vid);
+
+          $categories = '
+          <ul data-collapsible="expandable" class="collapsible ">';
+          
+          foreach ($terms as $term) {
+            // Parent terms as label title. They should not be clickable.
+            if (!current($term->parents)) {
+              $categories .= '
+              <li>
+                <div class="collapsible-header active">
+                  <p>' . $term->name . '</p>
+                </div>
+                <div class="collapsible-body">
+                  <div class="col l10 m10 s9 offset-l1">';
+
+              // Terms from second level. We need them as option list.
+              foreach ($terms as $cat_term) {
+                if (current($cat_term->parents) == $term->tid) {
+                  $categories .= '
+                  <input name="field_category_tid[]" value="' . $cat_term->tid . '" type="checkbox" class="field-filter">
+                  <label class="lable-field-filter">' . $cat_term->name . '</label>';
+                }
+              }
+              $categories .= '
+                  </div>
+                </div>
+              </li>';
+            }
+          }
+          $categories .= '</ul>';
+          
+          $widget->widget .= $categories;
           break;
       }
     }
-    // print '<pre>';
-    // print_r($vars['widgets']);
-    // print '</pre>';die;
   }
 }
